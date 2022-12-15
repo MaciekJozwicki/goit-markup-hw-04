@@ -101,11 +101,16 @@ ul {
 
 .hero {
     background-color: var(--color-background);
-    padding: 200px 452px 280px 452px;
+    background-image: url('/images/hero/hero-img.jpg'), url('/images/hero/overlay.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
-    min-width: 1600px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    outline: 2px dashed red;
 }
 .hero-header {
     font-size: 44px;
@@ -115,7 +120,6 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    /* padding-top: 200px; */
     max-width: 696px;
     margin-bottom: 30px;
     
