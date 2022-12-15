@@ -59,15 +59,27 @@ ul {
     color: var(--color-logo);
     cursor: pointer;
 }
-.contact {
+.contact1 {
     font-size: 14px;
     color: var(--color-text);
     text-decoration: none;
     letter-spacing: 0.02em;
     font-weight: 500;
-    
+    margin-left: 10px;
 }
-.contact:hover, .contact:focus {
+.contact2 {
+    font-size: 14px;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.contact1:hover, .contact1:focus {
+    color: var(--color-logo);
+    cursor: pointer;
+}
+.contact2:hover, .contact2:focus {
     color: var(--color-logo);
     cursor: pointer;
 }
@@ -93,24 +105,44 @@ ul {
 }
 .header-flex-contact {
     display:flex;
-    gap: 50px;
+    align-items: center;
     
+}
+.header-icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-left: 30px;
+    fill: var(--color-text);
+
+}
+.header-icon-smartphone:hover,
+.header-icon-smartphone:focus {
+    fill: var(--color-logo);
+}
+.header-icon-envelope {
+    width: 16px;
+    height: 12px;
+    fill: var(--color-text);
+}
+.header-icon-envelope:hover,
+.header-icon-envelope:focus {
+    fill: var(--color-logo);
 }
 
 /* INDEX HERO */
 
 .hero {
     background-color: var(--color-background);
-    background-image: url('/images/hero/hero-img.jpg'), url('/images/hero/overlay.jpg');
+    background-image: url('/images/hero/hero-img.jpg'), url('/images/hero/overlay.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 2px dashed red;
 }
 .hero-header {
     font-size: 44px;
@@ -159,6 +191,12 @@ ul {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--color-text);
+}
+.example-item {
+    background-color:var(--color-whiteF5);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
 }
 /* INDEX WHAT WE DO */
 .what-we {
@@ -227,6 +265,27 @@ background: #FFFFFF;
     
 }
 
+/* OUR CLIENTS */
+
+.our-clients-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+.our-clients {
+    display: flex;
+    gap: 30px;
+}
+.client-logo {
+    fill:#AFB1B8;
+}
+.client {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 /* PORTFOLIO CONTENT */
 figcaption h3 {
     font-size: 18px;
