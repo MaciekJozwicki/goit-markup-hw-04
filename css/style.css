@@ -7,8 +7,6 @@
     --color-whiteF5: #F5F4FA;
     --color-white: #FFFFFF;
     --color-footcontct: rgba(255%,255%,255%,60%);
-
-
 }
 * {
     margin: 0;
@@ -262,7 +260,20 @@ background: #FFFFFF;
     color: var(--color-text);
     font-size: 16px;
     letter-spacing: 0.03em;
-    
+}
+.team-social-links {
+    display: flex;
+    gap: 10px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 30px;
+}
+.team-social-link {
+    fill: #AFB1B8;
+}
+.team-social-link:hover, .team-social-link:focus {
+    fill: var(--color-logo);
+    cursor:pointer;
 }
 
 /* OUR CLIENTS */
@@ -324,6 +335,7 @@ padding: 20px 24px;
 .article-project1:hover, .article-project1:focus {
     
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 /* PORTFOLIO FILTER BUTTONS */
 .filter-button {
@@ -413,4 +425,12 @@ padding: 20px 24px;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--color-white)
+}
+.footer-social-link {
+    fill: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+fill: var(--color-logo);
+cursor: pointer;
 }
