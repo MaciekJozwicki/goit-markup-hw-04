@@ -133,7 +133,7 @@ ul {
 
 .hero {
     background-color: var(--color-background);
-    background-image: url('/images/hero/hero-img.jpg'), url('/images/hero/overlay.png');
+    background-image: url('../images/hero/hero-img.jpg'), url('../images/hero/overlay.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1600px;
