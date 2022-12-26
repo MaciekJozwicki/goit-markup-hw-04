@@ -7,6 +7,8 @@
     --color-whiteF5: #F5F4FA;
     --color-white: #FFFFFF;
     --color-footcontct: rgba(255%,255%,255%,60%);
+    --color-footsocial: rgba(255, 255, 255, 0.1);
+    --color-teamsocial: #AFB1B8;
 }
 * {
     margin: 0;
@@ -269,11 +271,27 @@ background: #FFFFFF;
     margin-bottom: 30px;
 }
 .team-social-link {
-    fill: #AFB1B8;
+    fill: var(--color-teamsocial)
 }
-.team-social-link:hover, .team-social-link:focus {
-    fill: var(--color-logo);
-    cursor:pointer;
+.team-social-links svg {
+    background-color:var(--color-white);
+    border-radius: 50%;
+}
+.team-social-list:hover .team-social-link {
+    fill: var(--color-white);
+    cursor: pointer;
+}
+.team-social-list:focus .team-social-link {
+    fill: var(--color-white);
+    cursor: pointer;
+}
+.team-social-list:hover svg {
+    background-color: var(--color-logo);
+    cursor: pointer;
+}
+.team-social-list:focus svg {
+    background-color: var(--color-logo);
+    cursor: pointer;
 }
 
 /* OUR CLIENTS */
@@ -292,16 +310,19 @@ background: #FFFFFF;
 }
 .client-logo {
     fill:#AFB1B8;
+    
 }
 .client-logo:hover, .client-logo:focus {
-    fill: var(--color-logo)
+    fill: var(--color-logo);
+    cursor: pointer;
 }
 .client {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 .client:hover, .client:focus {
-    border-color: var(--color-logo)
+    border-color: var(--color-logo);
+    cursor: pointer;
 }
 /* PORTFOLIO CONTENT */
 figcaption h3 {
@@ -427,10 +448,12 @@ padding: 20px 24px;
     color: var(--color-white)
 }
 .footer-social-link {
-    fill: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--color-white);
+    background-color: var(--color-footsocial)
 }
-.footer-social-link:hover,
-.footer-social-link:focus {
-fill: var(--color-logo);
-cursor: pointer;
+.footer-social-list:hover .footer-social-link {
+    fill: var(--color-logo);
+    cursor: pointer;
 }
+
